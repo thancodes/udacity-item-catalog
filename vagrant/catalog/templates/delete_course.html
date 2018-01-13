@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Delete `{{ course.name }}` Course</div>
+                <form method="post">
+                    <div class="panel-body">Are your sure you want for delete?</div>
+                    <div class="panel-footer">
+                        <a href="{{ url_for('view_course', course_id=course.id) }}" class="btn btn-link">Cancel</a>
+                        <button type="submit" class="btn btn-danger pull-right">Delete</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

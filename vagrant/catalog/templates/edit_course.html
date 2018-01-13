@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    {% if course.id %}
+                        {{ course.name }}
+                    {% else %}
+                        Add new Course
+                    {% endif %}
+                </div>
+                <form action="" method="post">
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label for="name">Course Name</label>
+                            <input type="text" name="name" id="name" class="form-control" value="{{ course.name }}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Course Description</label>
+                            <textarea name="description" id="description" cols="30" rows="5" class="form-control" required>{{ course.description }}</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="number">Course Number</label>
+                            <input type="text" name="number" id="number" class="form-control" value="{{ course.number }}">
+                        </div>
+                        <div class="form-group">
+                            <label for="url">Course URL</label>
+                            <input type="text" name="url" id="url" class="form-control" value="{{ course.url }}">
+                        </div>
+                        <div class="form-group">
+                            <label for="thumbnail_url">Thumbnail URL</label>
+                            <input type="text" name="thumbnail_url" id="thumbnail_url" class="form-control" value="{{ course.thumbnail_url }}">
+                        </div>
+                        <div class="form-group">
+                            <label for="category_id">Category</label>
+                            <select name="category_id" id="category_id" class="form-control">
+                                {% for c in categories %}
+                                    <option {% if c.id == course.category_id %} selected {% endif %} value="{{ c.id }}">{{ c.name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        {% if course.id %}
+                            <a href="{{ url_for('view_course', course_id=course.id) }}" class="btn btn-link">Back</a>
+                            <button type="submit" class="pull-right btn btn-primary">Save</button>
+                        {% else %}
+                            <a href="{{ url_for('index') }}" class="btn btn-link">Back</a>
+                            <button type="submit" class="pull-right btn btn-success">Add new</button>
+                        {% endif %}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

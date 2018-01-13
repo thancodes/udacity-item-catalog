@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Categories</div>
+                <div class="panel-body">
+                    <ul class="list-group">
+                        {% for c in categories %}
+                            <a href="{{ url_for('view_category', category_id=c.id) }}" class="list-group-item {% if c.id == category.id %} active {% endif %}">{{ c.name }}</a>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="panel panel-primary">
+                <div class="panel-heading">{{ category.name }} - Courses</div>
+                <div class="panel-body">
+                    <div class="row">
+                        {% for course in courses %}
+                            <div class="col-md-4">
+                                <a href="{{ url_for('view_course', course_id=course.id) }}" class="thumbnail">
+                                    <img src="{{ course.thumbnail_url }}" alt="" style="height: 125px;">
+                                    <div class="caption">
+                                        <h3 class="text-ellipsis">{{ course.name }}</h3>
+                                        <p class="text-ellipsis">{{ course.description }}</p>
+                                    </div>
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

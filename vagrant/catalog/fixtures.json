@@ -1,0 +1,102 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Android",
+      "description": "Learn how to design and develop great Android apps through courses built by industry experts at Google.",
+      "url": "https://www.udacity.com/courses/android"
+    },
+    {
+      "id": 2,
+      "name": "Data Science",
+      "description": "Learn data science from industry experts at Facebook, Cloudera, MongoDB, Georgia Tech, and more. We offer courses in data science where you’ll learn to solve data-rich problems and apply this knowledge to your big data needs. Whether you’re new to the field or looking for additional training, we have introductory, advanced, and industry-specific courses to meet your learning goals.",
+      "url": "https://www.udacity.com/courses/data-science"
+    },
+    {
+      "id": 3,
+      "name": "iOS",
+      "description": "In Udacity's iOS courses, you'll bridge the gap between the physical and the virtual. You'll learn to leverage common hardware features on the iPhone and iPad, including the microphone and camera, while also learning what it takes to build engaging and interactive user experiences. Whether you want to build the app of your dreams or land a job as an iOS developer, you'll be developing for platforms used by hundreds of millions of people every day. And that's pretty rad.",
+      "url": "https://www.udacity.com/courses/ios"
+    },
+    {
+      "id": 4,
+      "name": "Web Development",
+      "description": "Udacity web development courses are built with industry tech leaders such as Google, Salesforce, and others. These classes are designed to help you gain skills through web application development. You’ll learn the skills required to become a Front-End Engineer, Back-End Engineer, or a Full-Stack Engineer. Whether you’re trying to build your first website or you're trying to advance your skills we’ll teach you what you need to become a web developer.",
+      "url": "https://www.udacity.com/courses/web-development"
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "name": "Android Basics Nanodegree by Google",
+      "thumbnail_url": "https://s3-us-west-1.amazonaws.com/udacity-content/degrees/catalog-images/Android.png",
+      "description": "Get a solid grasp on the basics of foundational programming skills used in creating mobile apps",
+      "url": "https://www.udacity.com/course/android-basics-nanodegree-by-google--nd803",
+      "number": "nd803",
+      "category_id": 1
+    },
+    {
+      "id": 2,
+      "name": "Android Developer Nanodegree by Google",
+      "description": "For intermediate programmers pursuing Android mastery, this program teaches the tools, principles, and patterns that underlie all Android development.",
+      "number": "nd801",
+      "url": "https://www.udacity.com/course/android-developer-nanodegree-by-google--nd801",
+      "thumbnail_url": "https://s3-us-west-1.amazonaws.com/udacity-content/degrees/catalog-images/Android.png",
+      "category_id": 1
+    },
+    {
+      "id": 3,
+      "name": "Predictive Analytics for Business",
+      "description": "Predictive analytics is the practice of determining patterns from data to predict future outcomes and trends. Across industries, it enables high-value solutions to important business problems.",
+      "number": "nd008",
+      "url": "https://www.udacity.com/course/predictive-analytics-for-business--nd008",
+      "thumbnail_url": "https://s3-us-west-1.amazonaws.com/udacity-content/degrees/catalog-images/Predictive-Analytics.png",
+      "category_id": 2
+    },
+    {
+      "id": 4,
+      "name": "Data Analyst Nanodegree",
+      "description": "Learn to clean up messy data, uncover patterns and insights, make predictions using machine learning, and clearly communicate your findings.",
+      "number": "nd002",
+      "url": "https://www.udacity.com/course/data-analyst-nanodegree--nd002",
+      "thumbnail_url": "https://s3-us-west-1.amazonaws.com/udacity-content/degrees/catalog-images/Data-Analyst.png",
+      "category_id": 2
+    },
+    {
+      "id": 5,
+      "name": "Machine Learning Engineer Nanodegree",
+      "description": "Become a machine learning engineer and apply predictive models to massive data sets in fields like education, finance, healthcare or robotics.",
+      "number": "nd009",
+      "url": "https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009",
+      "thumbnail_url": "https://s3-us-west-1.amazonaws.com/udacity-content/degrees/catalog-images/ML.png",
+      "category_id": 2
+    },
+    {
+      "id": 6,
+      "name": "Become an iOS Developer",
+      "description": "Master writing in Swift as you build five portfolio-worthy iOS apps to demonstrate your expertise as an iOS Developer.",
+      "number": "nd003",
+      "url": "https://www.udacity.com/course/ios-developer-nanodegree--nd003",
+      "thumbnail_url": "https://s3-us-west-1.amazonaws.com/udacity-content/degrees/catalog-images/iOS.png",
+      "category_id": 3
+    },
+    {
+      "id": 7,
+      "name": "Front-End Web Developer Nanodegree",
+      "description": "Become a Front-End Web Developer by completing a variety of projects for your portfolio - become an HTML, CSS and JavaScript pro!",
+      "number": "nd001",
+      "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001",
+      "thumbnail_url": "https://s3-us-west-1.amazonaws.com/udacity-content/degrees/catalog-images/FE.png",
+      "category_id": 4
+    },
+    {
+      "id": 8,
+      "name": "Full Stack Web Developer Nanodegree",
+      "thumbnail_url": "https://s3-us-west-1.amazonaws.com/udacity-content/degrees/catalog-images/Full-Stack.png",
+      "description": "Learn how to create server-side, data-driven web applications that support any front-end and can scale to support hundreds of thousands of users.",
+      "url": "https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004",
+      "number": "nd004",
+      "category_id": 4
+    }
+  ]
+}
